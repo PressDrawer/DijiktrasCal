@@ -1,33 +1,42 @@
 <div class="container">
-  <h1>Dijkstra’s Algorithm Calculator</h1>
-  <p>Discovering Optimal Routes Through Nodes Using Dijkstra's Method</p>
+  
+  <div class="header-div">
+    <h1>Dijkstra’s Algorithm Calculator</h1>
+    <p class="sub-text">Discovering Optimal Routes Through Nodes Using Dijkstra's Method</p>
+  </div>
+  <div class="bottom-div">
 
+  </div>
   <div class="card">
     <div class="left">
       <h3>Select Path</h3>
       <label>From Node</label>
-      <select [(ngModel)]="fromNode" class="border-radious">
+      <select [(ngModel)]="fromNode" >
+        <option value="" disabled selected>Select</option>
         <option *ngFor="let node of nodes" [value]="node">{{ node }}</option>
       </select>
 
       <label>To Node</label>
-      <select [(ngModel)]="toNode" class="border-radious">
+      <select [(ngModel)]="toNode" >
+        <option value="" disabled selected>Select</option>
         <option *ngFor="let node of nodes" [value]="node">{{ node }}</option>
       </select>
 
       <div class="buttons">
-        <button (click)="clear()" class="border-radious">Clear</button>
-        <button (click)="calculate()" class="border-radious">Calculate<img src="assets/images/calculator.png" alt="Illustration"  /></button>
+        <button (click)="clear()">Clear</button>
+        <button (click)="calculate()" class="border-radious"><span class="button-text">Calculate</span><img src="assets/images/calculator.png" alt="Illustration" class="button-image"  /></button>
       </div>
     </div>
 
     <div class="right" *ngIf="result">
       <h3>Result</h3>
+      <div class="result-box">
       <p>From Node Name = "{{ fromNode }}", To Node Name = "{{ toNode }}"</p>
       <p>Path: {{ result.path.join(' → ') }}</p>
       <p>Total Distance: {{ result.distance }}</p>
+      </div>
     </div>
-    <div class="right" *ngIf="!result">
+    <div class="right-img" *ngIf="!result">
       
       
     <img src="assets/images/cover.png" alt="Illustration" class="placeholder-img" />

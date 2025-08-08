@@ -9,14 +9,17 @@ import { CalculatorService } from './services/calculator.service';
 export class CalculatorComponent {
 
   nodes = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
-  fromNode: string = 'A';
-  toNode: string = 'G';
+  fromNode: string = '';
+  toNode: string = '';
   result: { path: string[]; distance: number } | null = null;
 
   constructor(private calculatorService: CalculatorService) {}
 
   calculate() {
+    if(this.fromNode&&this.toNode)
+    {
     this.result = this.calculatorService.findShortestPath(this.fromNode, this.toNode);
+    }
   }
 
   clear() {
