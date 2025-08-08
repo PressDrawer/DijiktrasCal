@@ -1,0 +1,38 @@
+<div class="container">
+  <h1>Dijkstra’s Algorithm Calculator</h1>
+  <p>Discovering Optimal Routes Through Nodes Using Dijkstra's Method</p>
+
+  <div class="card">
+    <div class="left">
+      <h3>Select Path</h3>
+      <label>From Node</label>
+      <select [(ngModel)]="fromNode" class="border-radious">
+        <option *ngFor="let node of nodes" [value]="node">{{ node }}</option>
+      </select>
+
+      <label>To Node</label>
+      <select [(ngModel)]="toNode" class="border-radious">
+        <option *ngFor="let node of nodes" [value]="node">{{ node }}</option>
+      </select>
+
+      <div class="buttons">
+        <button (click)="clear()" class="border-radious">Clear</button>
+        <button (click)="calculate()" class="border-radious">Calculate<img src="assets/images/calculator.png" alt="Illustration"  /></button>
+      </div>
+    </div>
+
+    <div class="right" *ngIf="result">
+      <h3>Result</h3>
+      <p>From Node Name = "{{ fromNode }}", To Node Name = "{{ toNode }}"</p>
+      <p>Path: {{ result.path.join(' → ') }}</p>
+      <p>Total Distance: {{ result.distance }}</p>
+    </div>
+    <div class="right" *ngIf="!result">
+      
+      
+    <img src="assets/images/cover.png" alt="Illustration" class="placeholder-img" />
+  
+    </div>
+  </div>
+</div>
+
