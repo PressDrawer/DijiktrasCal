@@ -1,119 +1,132 @@
-
-html, body {
-  margin: 0;
-  height: 100%;
+html,
+body {
+    margin: 0;
+    height: 100%;
 }
+
 .container {
-  text-align: center;
-  background: #e6f1fd;
-  font-family: 'Poppins', sans-serif;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  margin: -22px;
-  h1 {
-    color: #ffffff;
-    padding-top: 70px;
-  }
-  h3{
-    color : #1154A3;
-    margin-top: 0px
-  }
-  p {
-    margin-top: 0;
-  }
-  .sub-text{
-    color: #ffffff;
-  }
-
-  .result-text{
-    padding-top: 18px;
-  }
-  .header-div{
-    height: 45%;
-    background-color: #1154A3;
-    align-items: center;
     text-align: center;
-    margin-right: -30px;
-  }
-  .bottom-div{
-    height: 60%;
-    background-color: #E7F3FF;
-    margin-right: -30px;
-  }
-  .card {
-    background: white;
-    margin: 20px auto;
-    max-width: 700px;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: absolute;
-     top: 50%;
-    left: 50%;
-    width: 721px;
-    border-radius: 8px;
-    transform: translate(-50%, -50%);
-    .left, .right {
-      width: 50%;
-      padding: 40px;
+    background: #e6f1fd;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    margin: -22px;
+
+    h1 {
+        color: #ffffff;
+        padding-top: 70px;
     }
 
-    .right{
-        background-color: #F2F3F6;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-    }
-    .right-img{
-        padding-top: 56px;
-        padding-right: 95px;
-        padding-left: 50px;
-    }
-    .result-box{
-        height: 300px;
-        background-color: #ffffff;
-        padding-left: 18px;
-        padding-right: 18px;
-    }
-    .left{
-        text-align: left;
-
-    }
-    select {
-      width: 100%;
-      padding: 5px;
-      margin: 10px 0;
-      color: #3B3C3F;
-       border-radius: 8px;
-        padding: 10px;
-      border-color: #D9DADD;
+    h3 {
+        color: #1154A3;
+        margin-top: 0px
     }
 
-    .buttons {
-      display: flex;
-      gap: 10px;
-      padding-top: 12px;
-      
-      button {
-        padding: 8px 12px;
-        cursor: pointer;
-        border: none;
-        background-color: #f37c3c;
-        color: white;
-        display:flex;
-        border-radius: 8px !important;
-        
-        .button-text{
-            padding-right: 16px;
-            padding-top: 2px;
+    p {
+        margin-top: 0;
+    }
+
+    .sub-text {
+        color: #ffffff;
+    }
+
+    .result-text {
+        padding-top: 18px;
+    }
+
+    .header-div {
+        height: 45%;
+        background-color: #1154A3;
+        align-items: center;
+        text-align: center;
+        margin-right: -30px;
+    }
+
+    .bottom-div {
+        height: 60%;
+        background-color: #E7F3FF;
+        margin-right: -30px;
+    }
+
+    .card {
+        background: white;
+        margin: 20px auto;
+        max-width: 700px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 721px;
+        border-radius: 8px;
+        transform: translate(-50%, -50%);
+
+        .left,
+        .right {
+            width: 50%;
+            padding: 40px;
         }
 
-        &:first-child {
-          background-color: white;
-          color: #f37c3c;
-          border: 1px solid #f37c3c;
+        .right {
+            background-color: #F2F3F6;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
         }
-      }
+
+        .right-img {
+            padding-top: 56px;
+            padding-right: 95px;
+            padding-left: 50px;
+        }
+
+        .result-box {
+            height: 300px;
+            background-color: #ffffff;
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+
+        .left {
+            text-align: left;
+
+        }
+
+        select {
+            width: 100%;
+            padding: 5px;
+            margin: 10px 0;
+            border-radius: 8px;
+            padding: 10px;
+            border-color: #D9DADD;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            padding-top: 12px;
+
+            button {
+                padding: 8px 12px;
+                cursor: pointer;
+                border: none;
+                background-color: #f37c3c;
+                color: white;
+                display: flex;
+                border-radius: 8px !important;
+
+                .button-text {
+                    padding-right: 16px;
+                    padding-top: 2px;
+                }
+
+                &:first-child {
+                    background-color: white;
+                    color: #f37c3c;
+                    border: 1px solid #f37c3c;
+                }
+            }
+        }
     }
-  }
 }
