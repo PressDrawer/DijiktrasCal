@@ -21,13 +21,13 @@
       </div>
     </div>
 
-    <div *ngIf="result">
+    <div class="right" *ngIf="result">
       <h3>Result</h3>
       <p>From Node Name = "{{ fromNode }}", To Node Name = "{{ toNode }}"</p>
       <p>Path: {{ result.path.join(' → ') }}</p>
       <p>Total Distance: {{ result.distance }}</p>
     </div>
-    <div  *ngIf="!result">
+    <div class="right" *ngIf="!result">
       
       
     <img src="assets/images/cover.png" alt="Illustration" class="placeholder-img" />
